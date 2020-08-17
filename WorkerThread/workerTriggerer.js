@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
     btn.addEventListener('click', ()=> {
         var child=document.createElement("p");
-        var node=document.createTextNode("Hello I am new paragraph");
+        var node=document.createTextNode("If you have clicked 'Click me!' button quickly after clicking 'Click worker' button then I have appeared without kepping you wait");
         child.appendChild(node);
         var parent = document.getElementById('div');
         parent.appendChild(child);
