@@ -1,9 +1,16 @@
-import Parent from './state/Parent';
+import ParentChildState from './state/parentchild/ParentChildState';
+import ParentSiblingState from './state/parentsibling/ParentSiblingState';
+import Sibling from './state/parentsibling/Sibling';
 
 function App() {
   return (
+    /* Button is used to change the state of the omponent*/
     <div className="App">
-      <Parent />
+      <ParentChildState />
+      {/* This shows that all child components(even nested) re-render whenever there is change in state of parent component*/}
+      <ParentSiblingState />
+      <Sibling />
+      {/* This is will not re-render'Sibling' component even state of 'ParentSiblingState' changes as 'Sibling' is not the child of 'ParentSibligChild' component*/}
     </div>
   );
 }
