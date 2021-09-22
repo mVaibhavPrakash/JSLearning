@@ -10,7 +10,7 @@ function App() {
       {/* This shows that all child components(even nested) re-render whenever there is change in state of parent component*/}
       <ParentSiblingState />
       <Sibling />
-      {/* This is will not re-render'Sibling' component even state of 'ParentSiblingState' changes as 'Sibling' is not the child of 'ParentSibligChild' component*/}
+      {/* This is will not re-render'Sibling' component even state of 'ParentSiblingState' changes as 'Sibling' is not the child of 'ParentSibligChild' component but the state of child and nesteed child changes */}
     </div>
   );
 }
